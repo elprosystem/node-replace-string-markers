@@ -1,7 +1,7 @@
 import { newReplaceKeyValue } from './refmarkers.js';
 import { displayValue } from './displayValue.js';
 import { defaultMessage, _errorsMessage } from "./getMessage.js";
-import { arrayOfProperties, isEmptyObject, propKeys, replaceAll } from "../eValidate/util/helpYou/helpers.js";
+import { arrayOfProperties, isEmptyObject, propKeys, replaceAll } from "../util/helpers.js";
 import { log } from '../eLog/index.js';
 
 

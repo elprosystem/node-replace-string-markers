@@ -1,7 +1,7 @@
 
 
 import { log } from "../eLog/index.js";
-import { getPrototypeOf, typeOf } from "../eValidate/util/helpYou/prototypeof.js";
+import { getPrototypeOf, typeOf } from "./util/prototypeof.js";
 import { optsDefault, safeOptions } from "./options.js";
 import { deepPrototypeOf, propKey } from "./utils/helper.js";
 
