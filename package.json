@@ -1,0 +1,24 @@
+{
+  "name": "replace-string-markers",
+  "version": "1.0.0",
+  "description": "replace in string with markers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elprosystem/node-replace-string-markers.git"
+  },
+  "keywords": [
+    "string",
+    "replace",
+    "markers"
+  ],
+  "author": "elprosystem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elprosystem/node-replace-string-markers/issues"
+  },
+  "homepage": "https://github.com/elprosystem/node-replace-string-markers#readme"
+}
