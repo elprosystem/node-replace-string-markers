@@ -1,5 +1,4 @@
 import { performance } from 'perf_hooks'
-import { log } from '../eLog/index.js';
 import { safeOptions } from './options.js';
 import { _getMessage, defaultMessage, _errorsMessage, parseMessages } from './getMessage.js';
 import { _setMessage } from './setMessage.js';

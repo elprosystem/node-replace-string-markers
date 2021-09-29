@@ -1,5 +1,4 @@
 
-import { eLog } from "elog-console";
 import { getDotNotation } from "./utils/dot.string.notation.js";
 import { def, isString, isEmptyString, } from "./utils/helper.js";
 

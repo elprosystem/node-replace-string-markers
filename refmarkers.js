@@ -1,4 +1,3 @@
-import { log } from "../eLog/index.js"
 import { reverseArrayOfProperties } from "./utils/helper.js"
 
 
