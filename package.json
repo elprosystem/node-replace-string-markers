@@ -1,6 +1,6 @@
 {
   "name": "replace-string-markers",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "replace in string with markers",
   "main": "index.js",
   "type": "module",
