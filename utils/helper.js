@@ -35,3 +35,30 @@ export const isObject = x => typeof x === 'object' && x !== null && !isArray(x)
 export const isEmptyObject = x => propKeys(x).length <= 0
 export const reverseArrayOfProperties = x => x.reduce((acc, ele) => ({ ...acc, ...ele }), {})
 export const arrayOfProperties = x => isArray(x) ? x : propKeys(x).map(m => ({ [m]: x[m] }))
+
+// merge two object
+const _merge = (destination, ...sources) => {
+
+  sources.forEach((source) => {
+    propKeys(source).forEach((prop) => {
+      if (
+        source[prop]
+        && source[prop].constructor
+        && source[prop].constructor === Object
+      ) {
+        if (!destination[prop] || !destination[prop].constructor || destination[prop].constructor !== Object) {
+          destination[prop] = {};
+        }
+        _merge(destination[prop], source[prop]);
+      } else {
+        destination[prop] = source[prop];
+      }
+    });
+  });
+  return destination;
+}
+
+// merge two object
+export const merge = (destination, sources) => {
+  return _merge(destination, sources)
+}
