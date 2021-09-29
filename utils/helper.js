@@ -27,6 +27,24 @@ export const takeBetweenBraces = (x, charStart, charEnd) => x.match(new RegExp(`
 export const ensureArray = x => isArray(x) ? x : []
 
 
+
+
+export const containsCharacteres = str => /[&\/\\#+[\]()$~%':*?<>{}\-]/g.test(str)
+export const replaceByCharacter = (s, c) => s.replace(/[&\/\\#+[\]()$~%':*?<>{}/-]/g, c)
+
+
+const replace = (x, a, b) => x.split(a).join(b)
+/* string, this , to this */
+export const replaceAll = (x, a, b) => !(x.indexOf(a) > -1) ? x : replaceAll(replace(x, a, b), a, b)
+// takeBetweenChar
+export const takeBetweenChar = (str, open, close) => str.split(open)
+  .filter((v) => v.indexOf(close) > -1).map((value) => value.split(close)[0])
+
+
+
+
+
+
 // object
 export const propKeys = obj => def(obj) ? Object.keys(obj) : []
 export const propKey = obj => propKeys(obj)[0]
